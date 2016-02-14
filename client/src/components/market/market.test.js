@@ -34,5 +34,17 @@ describe('Market component', function(){
       expect(market.getData().products).not.toContain('one');
       expect(market.getData().products.length).toBe(0);
     });
+
+    xit('should allow companies to "ask" for products', function(){
+
+    });
+
+    xit('should allow companies to "bid" for products', function(){
+
+    });
+
+    xit('should resolve all offers on every tick', function(){
+
+    });
   });
 });

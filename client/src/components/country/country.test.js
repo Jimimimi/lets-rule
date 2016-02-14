@@ -21,5 +21,11 @@ describe('Country component', function(){
       var country = new factory({name: 'Test'});
       expect(country.getData().data.name).toEqual('Test');
     });
+
+    it('should instantiate a Market on creation', function(){
+      var country = new factory({name: 'Test'});
+      expect(country.getData().market).toBeDefined();
+      expect(country.getData().market.getData()).toBeDefined();
+    });
   });
 });
